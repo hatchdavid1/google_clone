@@ -12,6 +12,11 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+a {
+    text-decoration: none; /*Para quitar toda la decoración a las eqtiquetas de anchor*/
+    cursor: pointer; /*Para tener un apuntador al pasar el mouse*/
+}
+
 header{
     width: 100%;
     height: 60px;
@@ -20,8 +25,31 @@ header{
 header nav{
     display: flex;
     justify-content: flex-end; /*Para mandar a los elementos del nav al final de forma horizontal*/
-    /*Acomodar los elementos de una lista de forma horizontal */
 }
-nav-right-section{
-    
+header nav .nav-right-section{
+    width: 250px;
+    height: auto; /*Que sea automático ya que al padre ya tiene cierta altura*/
+    display: flex;
+    list-style: none; /*Para quitar los estilos que tienen las listas por default*/
+    justify-content: center; /*Para que el contenido se quede centrado*/
+    align-items: center;
+}
+
+nav .nav-right-section a{
+    margin-right: 10px;
+    color: #000000;
+}
+
+nav .nav-right-section .Menu-Icon{
+    background-image: url('https://static.thenounproject.com/png/756729-200.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+}
+
+nav .nav-right-section img{
+    border-radius: 50%;
+    margin-left: 10px;
 }
